@@ -43,6 +43,7 @@ echo APP_VERSION=1.0 >> .env
 echo APP_NAME=deposit-calculation-service >> .env
 
 echo SITE_HOST=0.0.0.0 >> .env
+
 echo SITE_PORT=8000 >> .env
 
 echo SITE_LOG_LEVEL=info >> .env
