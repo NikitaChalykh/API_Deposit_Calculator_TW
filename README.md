@@ -60,7 +60,7 @@ echo DEBUG=True >> .env
 docker-compose up -d
 ```
 
-5. Запуск тестов:
+5. Запуск юнит-тестов:
 ```bash 
 docker exec -it deposit-calculation-service pytest
 ```
