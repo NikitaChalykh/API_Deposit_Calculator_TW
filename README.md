@@ -60,6 +60,11 @@ echo DEBUG=True >> .env
 docker-compose up -d
 ```
 
+5. Запуск тестов:
+```bash 
+docker exec -it deposit-calculation-service pytest
+```
+
 Документация к проекту
 ----------
 Документация для API (swagger) после установки доступна по адресу: 
