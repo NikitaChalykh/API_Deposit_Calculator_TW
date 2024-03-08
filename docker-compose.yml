@@ -1,0 +1,13 @@
+version: ${APP_VERSION}
+
+services:
+
+# application service
+  fastapi-app:
+    container_name: ${APP_NAME}
+    build: ./deposit_calculator
+    ports:
+      - ${SITE_PORT}:${SITE_PORT}
+    restart: always
+    env_file:
+      - .env
