@@ -4,10 +4,9 @@ from collections import OrderedDict
 from calendar import monthrange
 
 from ..models import DepositCalculationRequestModel
-from ..entities import BasePointsCase
 
 
-class DepositCalculationCase(BasePointsCase):
+class DepositCalculationCase:
     """
     Кейс апи расчета суммы по депозиту.
     """

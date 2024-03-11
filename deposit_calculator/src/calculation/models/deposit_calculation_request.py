@@ -1,13 +1,11 @@
 from datetime import date, datetime
 from decimal import Decimal
 
-from pydantic import field_validator
+from pydantic import field_validator, BaseModel
 from fastapi import HTTPException
 
-from ..entities import BasePointsModel
 
-
-class DepositCalculationRequestModel(BasePointsModel):
+class DepositCalculationRequestModel(BaseModel):
     """
     Модель запроса данных для расчета депозита.
     """
