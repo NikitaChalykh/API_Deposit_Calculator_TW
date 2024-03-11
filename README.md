@@ -59,7 +59,7 @@ echo SITE_RELOAD_DELAY=0.25 >> .env
 echo DEBUG=True >> .env
 ```
 
-4. Установка и запуск приложения в контейнерах:
+4. Установка и запуск приложения в контейнере:
 ```bash 
 docker-compose up -d
 ```
