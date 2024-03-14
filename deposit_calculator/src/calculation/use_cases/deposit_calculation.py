@@ -23,19 +23,19 @@ class DepositCalculationCase:
             calc_amount = calc_amount * (1 + calc_rate / (12 * 100))
 
             # сериализуем и сохраняем данные по сумме депозита за период
-            await self._add_deposit_calculation_data(
+            self._add_deposit_calculation_data(
                 calc_date=calc_date,
                 calc_amount=calc_amount,
                 result_deposit_calculation=result_deposit_calculation,
             )
 
             # обновляем дату для следующего расчетного периода
-            calc_date = await self._update_calc_date(calc_date)
+            calc_date = self._update_calc_date(calc_date)
 
         return result_deposit_calculation
 
     @staticmethod
-    async def _add_deposit_calculation_data(
+    def _add_deposit_calculation_data(
         calc_date: date,
         calc_amount: Decimal,
         result_deposit_calculation: dict,
@@ -50,7 +50,7 @@ class DepositCalculationCase:
         result_deposit_calculation.update({form_calc_date: form_calc_amount})
 
     @staticmethod
-    async def _update_calc_date(calc_date: date) -> date:
+    def _update_calc_date(calc_date: date) -> date:
         """
         Обновления расчетной даты следующего периода.
         """
