@@ -10,7 +10,7 @@ router = APIRouter(prefix="/calculation", tags=["calculation"])
     "/deposit",
     status_code=status.HTTP_200_OK,
 )
-async def deposit_calculation_view(
+def deposit_calculation_view(
     payload: DepositCalculationRequestModel,
 ) -> dict:
     """
@@ -18,4 +18,4 @@ async def deposit_calculation_view(
     """
 
     deposit_calculation_case: DepositCalculationCase = DepositCalculationCase()
-    return await deposit_calculation_case(payload=payload)
+    return deposit_calculation_case(payload=payload)

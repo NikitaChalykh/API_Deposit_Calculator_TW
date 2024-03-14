@@ -11,7 +11,7 @@ class DepositCalculationCase:
     Кейс апи расчета суммы по депозиту.
     """
 
-    async def __call__(self, payload: DepositCalculationRequestModel) -> dict:
+    def __call__(self, payload: DepositCalculationRequestModel) -> dict:
         calc_amount: Decimal = payload.amount
         calc_date: date = payload.date
         calc_rate: Decimal = Decimal(payload.rate)
