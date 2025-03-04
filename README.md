@@ -1,9 +1,8 @@
-REST API для калькулятора депозита
+REST API для расчета депозита
 =====
 
 Описание проекта
 ----------
-Проект создан в рамках тестового задания для кандидатов-разработчиков.
 
 Проект разворачивается в Docker контейнере с web-приложением.
 
@@ -24,47 +23,25 @@ API сервис реализуется на базе фреймворка fasta
 * Python 3.11.6
 * fastapi 0.103.2
 * pytest
-* Docker
+* Docker, Docker Compose
 
-Установка проекта из репозитория (Linux и macOS)
+Установка проекта из репозитория
 ----------
-1. Клонировать репозиторий и перейти в него в командной строке:
+1. Клонирование репозитория::
 ```bash 
 git clone https://github.com/NikitaChalykh/deposit_calculator.git
 
-cd deposit_calculator
+cd deposit_calculator # Переходим в директорию с проектом
 ```
 
-2. Cоздать и открыть файл ```.env``` с переменными окружения:
-```bash 
-touch .env
-```
+2. Создайте файл ```.env``` используя ```.env.example``` в качестве шаблона
 
-3. Заполнить ```.env``` файл с переменными окружения по примеру:
-```bash 
-echo APP_VERSION=1.0 >> .env
-
-echo APP_NAME=deposit-calculation-service >> .env
-
-echo SITE_HOST=0.0.0.0 >> .env
-
-echo SITE_PORT=8000 >> .env
-
-echo SITE_LOG_LEVEL=info >> .env
-
-echo SITE_RELOAD=True >> .env
-
-echo SITE_RELOAD_DELAY=0.25 >> .env
-
-echo DEBUG=True >> .env
-```
-
-4. Установка и запуск приложения в контейнере:
+3. Установка и запуск проекта в контейнере:
 ```bash 
 docker-compose up -d
 ```
 
-5. Запуск юнит-тестов:
+4. Запуск юнит-тестов:
 ```bash 
 docker exec -it deposit-calculation-service pytest
 ```
