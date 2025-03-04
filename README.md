@@ -34,7 +34,7 @@ git clone https://github.com/NikitaChalykh/deposit_calculator.git
 cd deposit_calculator # Переходим в директорию с проектом
 ```
 
-2. Создайте файл ```.env``` используя ```.env.example``` в качестве шаблона
+2. Создайте файл ```.env``` используя ```env.example``` в качестве шаблона
 
 3. Установка и запуск проекта в контейнере:
 ```bash 
