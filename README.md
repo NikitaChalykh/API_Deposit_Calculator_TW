@@ -19,7 +19,7 @@ REST API сервис для расчета депозита
 Стек технологий
 ----------
 
-* Python 3.11.6
+* Python 3.11+
 * fastapi 0.103.2
 * pytest
 * Docker, Docker Compose
