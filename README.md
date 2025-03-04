@@ -15,7 +15,7 @@ API сервис реализуется на базе фреймворка fasta
 
 * Python 3.11+
 * Docker
-* Works on Linux, Windows, macOS, BS
+* Works on Linux
 
 Стек технологий
 ----------
