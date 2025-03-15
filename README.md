@@ -1,4 +1,4 @@
-REST API service for calculating deposits
+REST API service for deposit calculator
 =====
 
 Project description
