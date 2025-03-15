@@ -37,7 +37,7 @@ cd deposit_calculator # Go to the directory with the project
 
 3. Installing and running the project in a container:
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 4. Launching unit tests:
