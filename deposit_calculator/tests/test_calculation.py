@@ -1,5 +1,3 @@
-# Тесты апи расчета суммы по депозиту
-
 
 def test_deposit_calculation_200(sync_client):
     response = sync_client.post(

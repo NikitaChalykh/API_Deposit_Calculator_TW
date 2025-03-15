@@ -19,9 +19,5 @@ def application():
 
 @pytest.fixture(scope="session")
 def sync_client(application: FastAPI):
-    """
-    Синхронный клиент
-    """
-
     sync_client: TestClient = TestClient(app=application, base_url=BASE_URL)
     return sync_client

@@ -8,7 +8,7 @@ from ..models import DepositCalculationRequestModel
 
 class DepositCalculationCase:
     """
-    Кейс апи расчета суммы по депозиту.
+    Case api for calculating the deposit amount.
     """
 
     def __call__(self, payload: DepositCalculationRequestModel) -> dict:
@@ -41,7 +41,7 @@ class DepositCalculationCase:
         result_deposit_calculation: dict,
     ) -> None:
         """
-        Добавление сериализованной записи в результирующий словарь.
+        Append the serialized entry to the resulting dictionary.
         """
 
         form_calc_date = datetime.strftime(calc_date, "%d.%m.%Y")
@@ -52,7 +52,7 @@ class DepositCalculationCase:
     @staticmethod
     def _update_calc_date(calc_date: date) -> date:
         """
-        Обновления расчетной даты следующего периода.
+        Updates the next period's settlement date.
         """
 
         calc_date_year = calc_date.year

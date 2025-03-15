@@ -1,22 +1,22 @@
-REST API сервис для расчета депозита
+REST API service for calculating deposits
 =====
 
-Описание проекта
+Project description
 ----------
-Проект представляет собой API сервис для расчета депозита по полученному вектору данных.
+The project is an API service for calculating deposits based on the received data vector.
 
-Проект разворачивается в Docker контейнере.
+The project is deployed in a Docker container.
 
-Проект покрыт юнит тестами.
+The project is covered with unit tests.
 
-Системные требования
+System requirements
 ----------
 
 * Python 3.11+
 * Docker
 * Works on Linux
 
-Стек технологий
+Technology stack
 ----------
 
 * Python 3.11+
@@ -24,29 +24,29 @@ REST API сервис для расчета депозита
 * pytest
 * Docker, Docker Compose
 
-Установка проекта из репозитория
+Installing the project from the repository
 ----------
-1. Клонирование репозитория::
-```bash 
+1. Cloning the repository::
+```bash
 git clone https://github.com/NikitaChalykh/deposit_calculator.git
 
-cd deposit_calculator # Переходим в директорию с проектом
+cd deposit_calculator # Go to the directory with the project
 ```
 
-2. Создайте файл ```.env``` используя ```env.example``` в качестве шаблона
+2. Create a ```.env``` file using ```env.example``` as a template
 
-3. Установка и запуск проекта в контейнере:
-```bash 
+3. Installing and running the project in a container:
+```bash
 docker-compose up -d
 ```
 
-4. Запуск юнит-тестов:
-```bash 
+4. Launching unit tests:
+```bash
 docker exec -it deposit-calculation-service pytest
 ```
 
-Документация к проекту
+Project documentation
 ----------
-Документация для API (swagger) после установки доступна по адресу: 
+Documentation for the API (swagger) after installation is available at:
 
 ```http://127.0.0.1:8000/docs/```

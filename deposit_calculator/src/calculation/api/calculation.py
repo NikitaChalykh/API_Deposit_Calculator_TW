@@ -14,7 +14,7 @@ def deposit_calculation_view(
     payload: DepositCalculationRequestModel,
 ) -> dict:
     """
-    Апи расчета суммы по депозиту.
+    Api for calculating the deposit amount.
     """
 
     deposit_calculation_case: DepositCalculationCase = DepositCalculationCase()
